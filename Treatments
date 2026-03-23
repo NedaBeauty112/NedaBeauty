@@ -1,0 +1,3393 @@
+<!-- ****** Blank Bootstrap 4.6 starting template for 101922, Web & Time Based Design. <div> tags should be replaced with semantic HTML tags where appropriate  ***** -->
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+  <head>
+    <!-- Required Boostrap meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Other meta tags -->
+    <meta name="Sam Pashmi" content="Nedas Website">
+    <meta name="Sam Pashmi" content="NEDA BEAUTY, SKIN CLINIC">
+
+    <!-- ***** Link tags ***** -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+      <!-- IDEA: Or use Google's Material Icons (https://material.io/)- used like Google Fonts: http://google.github.io/material-design-icons/-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+      <!-- Font Awesome (https://fontawesome.com/) -->
+       <script src="https://kit.fontawesome.com/0b061bfed8.js" crossorigin="anonymous"></script>
+
+      <!-- Webfonts -->
+      <!-- IDEA: add you Google font link tags here -->
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+
+      <!-- Stylesheet for lightbox If you want to have an Image gallery make sure you include this link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+
+
+      <!-- Bootstrap core CSS -->
+      <!-- IDEA: this is where Boostrap's CSS is loaded in via their CDN - you don't need to include the actual files in your site folder, but they are usful to refer to-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+      <!-- Your custom styles for this template - must be after Bootstrap's link element to over ride it (load after) as needed -->
+      <link href="css/custom.css" rel="stylesheet">
+
+    <title>Neda's Beautician Website</title>
+
+<style>
+/* ======================================
+   BASE / RESET / GLOBAL STYLES
+   ====================================== */
+
+html {
+  font-size: 1rem; /* base font size */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+      text-decoration: none;
+}
+
+.row2 {
+  display: flex;
+      flex-wrap: wrap;
+}
+
+.limbo {
+margin-top: 10px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d3d6c9; /* Adjust this color if you want an exact match */
+  color: white;
+  font-family: serif;
+  font-weight: bold;
+  padding: 1rem 2rem; /* Button padding scales with screen width */
+  border: none;
+  border-radius: 50rem; /* Keeps the capsule shape on all screen sizes */
+  cursor: pointer;
+  text-align: center;
+  transition: opacity 0.2s ease-in-out;
+  white-space: nowrap; /* Prevent text wrapping */
+  justify-self: center;
+}
+
+/* Optional hover effect */
+.button:hover {
+  opacity: 0.9;
+}
+
+.grow-text {
+  font-size: 1.6vw; /* Font scales with screen width */
+  transition: font-size 0.3s ease-in-out; /* Smooth transition for font-size */
+}
+
+.grow-text:hover {
+    font-size: 2vw; /* Larger font size on hover */
+    color: #dca070;
+    background-color: #ffe0c0;
+}
+
+.hh:hover {
+  color: white;
+}
+
+/* Utility Classes */
+.white { color: snow; }
+.glow {
+  color: #FFCC33;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #FF6600, 0 0 20px #FF6600, 0 0 30px #FFCC33,
+                 0 0 40px #FFCC33, 0 0 50px #FFCC33, 0 0 60px #FFCC33, 0 0 70px #FFCC33;
+  }
+  to {
+    text-shadow: 0 0 20px #FF6600, 0 0 30px #CC0000, 0 0 40px #CC0000,
+                 0 0 50px #CC0000, 0 0 60px #CC0000, 0 0 70px #CC0000, 0 0 80px #CC0000;
+  }
+}
+
+/* ======================================
+   HEADER / NAVBAR
+   ====================================== */
+
+header {
+  width: 100%;
+  height: 18vh;
+  background: #F8E5CD;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+  z-index: 10;
+}
+
+.fade-up {
+  animation: fade-up 0.5s;
+}
+
+.fade-down {
+  animation: fade-down 1s;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  gap: 20px;
+  position: sticky;
+}
+
+.bground {
+  width: 100%;
+  height: 18vh;
+  background: #F3F3F3;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* Logo */
+.logo {
+  height: 18vh;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Nav Links */
+.custom-nav-link, .custom-nav-link.on {
+  position: relative;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  text-decoration: none; /* remove default underline */
+  transition: color 0.3s ease;
+}
+
+/* Sliding underline */
+.custom-nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ffe0c0;
+  transition: width 0.3s ease;
+}
+
+label {
+font-weight: bold;
+display: block;
+margin-top: 5px;
+margin-bottom: 0%;
+color: black;
+}
+
+
+
+.distance {
+    justify-content: space-between;
+}
+.minus {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.store-hours {
+  display: flex;
+  flex-wrap: wrap;
+  /* Optional: set a max width to control the layout width */
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  position: relative;
+  height: 0;
+}
+
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.custom-nav-link:hover::after { width: 100%; }
+.custom-nav-link:hover { color: #ffe0c0; }
+.custom-nav-link.on::after { width: 100%; }
+
+/* Icons */
+.header-icons {
+  display: flex;
+  gap: 15px;
+  justify-self: center;
+}
+
+/* Custom Navbar Overrides */
+.custom-navbar {
+  background-color: transparent !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.navbar-collapse { flex-grow: 0; }
+
+.navbar-toggler {
+  background: #AB8C6D !important;
+  color: #FFCC33;
+}
+
+
+
+/* Bootstrap Padding Overrides */
+
+
+.carousel-container {
+    display: flex; /* Aligns slides in a row */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Ensures it snaps to each slide */
+    scroll-behavior: smooth; /* Smooth scrolling animation */
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    /* Hide scrollbar for cleaner look (optional, but improves appearance) */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.carousel-slide {
+    flex-shrink: 0; /* Prevents slides from shrinking */
+    width: 100%; /* Each slide takes the full width of the container */
+    scroll-snap-align: start; /* Snap to the start of each slide */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images cover the area nicely */
+}
+
+/* ======================================
+   LAYOUT / CONTAINERS
+   ====================================== */
+
+   .ribbons {
+     background: url("../ribbonsss.svg");
+   	background-repeat: no-repeat;
+   	background-size: cover;
+   	background-position: center;
+   	justify-content: space-between;
+    padding: 16% 0% 0% 0%;
+    margin-top: 1%;
+     	}
+
+      .D5,.D6,.D7{
+        position: relative;
+        overflow: visible;     /* allow image to spill outside the div */
+        padding: 5%;           /* padding for your text */
+        z-index: 1;
+        color: white;          /* optional: text contrast */
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* centers text vertically in available space */
+        z-index: -1;
+      }
+
+      /* Background image layer FACE*/
+      .D5::before {
+        content: "";
+        position: absolute;
+        top: 50%;              /* start from vertical center */
+        left: 50%;             /* horizontal center */
+        width: 100%;
+        aspect-ratio: 1 / 1;   /* square image */
+        opacity: 0.5;
+        background: url("../D17v7.svg") center no-repeat;
+        background-size: contain; /* show entire image, no cropping */
+        transform: translate(-50%, -50%); /* center the image perfectly */
+        z-index: -1;
+      }
+
+      .spoticon {
+        background: url("../spoticon.svg");
+size: 5%;
+        	}
+
+      .neg {
+       margin-top: -4%;
+         }
+
+.container { max-width: 100%; }
+
+.row {
+  margin-bottom: 0;
+}
+
+
+
+.timely-list .timely-list__button {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+
+
+
+
+.mid {
+    align-items: center;
+}
+
+.textmid {
+      text-align: center;
+  }
+
+  .end {
+      align-items: end;
+  }
+
+
+[class*="col-"] {
+  padding-top: 0px;
+  padding-bottom: 0;
+}
+
+.outerbox {
+  align-self: center;
+  justify-content: space-evenly;
+}
+
+.box {
+background: snow;
+margin: 2% 0% 5.5%;
+background-size: cover;
+background-position: center;
+border-radius: 16px;
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+width: fit-content;
+}
+
+.pp {
+  padding: 2rem 2rem 0rem 2rem;
+}
+
+.gloss-overlay3 {
+    background: radial-gradient(circle at 80% 30%, #dca070, #ffe0c0);
+  animation: shine2 4s infinite alternate;
+}
+
+.floating-btn {
+  position: fixed;
+  bottom: 1%;
+  right: 20px;
+  border-radius: 25%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  z-index: 1000;
+  opacity: 1;
+}
+
+@keyframes shine2 {
+  0% { transform: translate(100%, 115%) rotate(10deg); }
+  100% { transform: translate(5%, 0%) rotate(0deg); }
+}
+
+
+@keyframes fade-up {
+  0% {
+opacity: 0;
+transform: translateY(30%) scale(0.9);
+  }
+
+  100% {
+opacity: 1;
+transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes fade-down {
+  0% {
+opacity: 0;
+transform: translateY(-30%) scale(0.9);
+  }
+
+  100% {
+opacity: 1;
+transform: translateY(0px) scale(1);
+  }
+}
+
+@keyframes shine {
+  0% { transform: translate(-15%, -15%) rotate(0deg); }
+  100% { transform: translate(15%, 15%) rotate(10deg); }
+}
+
+
+/* Frosted Glass */
+.blur { backdrop-filter: blur(3px); }
+
+/* ======================================
+   TYPOGRAPHY
+   ====================================== */
+
+h1 {
+  font-family: serif;
+  font-weight: 750;
+  font-size: 3vw;
+  color: black;
+  position: relative;
+}
+
+h2 {
+  font-family: serif;
+  font-weight: 750;
+  font-size: 250%;
+  color: black;
+}
+
+h3 {
+  font-family: serif;
+  font-weight: 250;
+  font-size: 2.4vw;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadein 1s ease-out both;
+  animation-timeline: view(); /* activates on scroll */
+  animation-range: entry 0% cover 40%; /* when element enters viewport */
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fancy-quote::before {
+  content: "“";
+  top: -10px;
+  left: 0;
+}
+
+.fancy-quote::after {
+  content: "”";
+  bottom: -20px;
+  right: 0;
+}
+
+/* 👇 Subtle pulsing animation */
+@keyframes breathe {
+  0%   { transform: scale(1);     opacity: 0.9; }
+  50%  { transform: scale(1.1);  opacity: 1; }
+  100% { transform: scale(1);     opacity: 0.9; }
+}
+
+p, ul, li, a {
+  font-family: 'Noto Sans', sans-serif;
+  color: black;
+  font-size: 1.5vw;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* ======================================
+   COMPONENTS / SECTIONS
+   ====================================== */
+.padding {
+  padding-top: 5%;
+}
+
+.padding2 {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.padding3 {
+  padding-right: 4%;
+}
+
+.padding4 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  z-index: 1;
+}
+
+.padding5 {
+  padding-top: 20%;
+}
+
+footer {
+  background-color: #A4BAA8;
+  padding: 1% 2%;
+}
+
+.Max {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 94vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.minus2 {
+  margin-right: 0px;
+
+}
+
+
+/* Hide radio buttons */
+input[type="radio"] {
+  display: none;
+}
+
+/* --- Slide 1 Configuration --- */
+#slide1:checked ~ .cards label:nth-child(1) {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+  z-index: 3;
+}
+#slide1:checked ~ .cards label:nth-child(2) {
+  transform: translateX(27%) scale(0.8);
+  opacity: 0.8;
+  z-index: 2;
+}
+#slide1:checked ~ .cards label:nth-child(3) {
+  transform: translateX(94%) scale(0.6);
+  opacity: 0.4;
+  z-index: 1;
+}
+#slide1:checked ~ .cards label:nth-child(4) {
+  transform: translateX(-127%) scale(0.8);
+  opacity: 0.8;
+  z-index: 2;
+}
+#slide1:checked ~ .cards label:nth-child(5) {
+  transform: translateX(-194%) scale(0.6);
+  opacity: 0.4;
+  z-index: 1;
+}
+
+/* --- Slide 2 Configuration --- */
+#slide2:checked ~ .cards label:nth-child(1) {
+  transform: translateX(-127%) scale(0.8);
+  opacity: 0.8;
+  z-index: 2;
+}
+#slide2:checked ~ .cards label:nth-child(2) {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+  z-index: 3;
+}
+#slide2:checked ~ .cards label:nth-child(3) {
+  transform: translateX(27%) scale(0.8);
+  opacity: 0.8;
+  z-index: 2;
+}
+#slide2:checked ~ .cards label:nth-child(4) {
+  transform: translateX(-194%) scale(0.6);
+  opacity: 0.4;
+  z-index: 1;
+}
+#slide2:checked ~ .cards label:nth-child(5) {
+  transform: translateX(94%) scale(0.6);
+  opacity: 0.4;
+  z-index: 1;
+}
+
+/* --- Slide 3 Configuration (Continuation) --- */
+#slide3:checked ~ .cards label:nth-child(1) {
+  transform: translateX(-194%) scale(0.6);
+  opacity: 0.4;
+  z-index: 1;
+}
+#slide3:checked ~ .cards label:nth-child(2) {
+  transform: translateX(-127%) scale(0.8);
+  opacity: 0.8;
+  z-index: 2;
+}
+#slide3:checked ~ .cards label:nth-child(3) {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+  z-index: 3;
+}
+#slide3:checked ~ .cards label:nth-child(4) {
+  transform: translateX(94%) scale(0.6);
+  opacity: 0.4;
+  z-index: 1;
+}
+#slide3:checked ~ .cards label:nth-child(5) {
+  transform: translateX(27%) scale(0.8);
+  opacity: 0.8;
+  z-index: 2;
+}
+
+/* --- Slide 4 Configuration (Continuation) --- */
+#slide4:checked ~ .cards label:nth-child(1) {
+  transform: translateX(27%) scale(0.8);
+  opacity: 0.8;
+  z-index: 2;
+}
+#slide4:checked ~ .cards label:nth-child(2) {
+  transform: translateX(94%) scale(0.6);
+  opacity: 0.4;
+  z-index: 1;
+}
+#slide4:checked ~ .cards label:nth-child(3) {
+  transform: translateX(-194%) scale(0.6);
+  opacity: 0.4;
+  z-index: 1;
+}
+#slide4:checked ~ .cards label:nth-child(4) {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+  z-index: 3;
+}
+#slide4:checked ~ .cards label:nth-child(5) {
+  transform: translateX(-127%) scale(0.8);
+  opacity: 0.8;
+  z-index: 2;
+}
+
+
+/* --- Slide 5 Configuration (Continuation) --- */
+#slide5:checked ~ .cards label:nth-child(1) {
+  transform: translateX(94%) scale(0.6);
+  opacity: 0.4;
+  z-index: 1;
+
+}
+#slide5:checked ~ .cards label:nth-child(2) {
+  transform: translateX(-194%) scale(0.6);
+  opacity: 0.4;
+  z-index: 1;
+}
+#slide5:checked ~ .cards label:nth-child(3) {
+  transform: translateX(-127%) scale(0.8);
+  opacity: 0.8;
+  z-index: 2;
+}
+#slide5:checked ~ .cards label:nth-child(4) {
+  transform: translateX(27%) scale(0.8);
+  opacity: 0.8;
+  z-index: 2;
+}
+#slide5:checked ~ .cards label:nth-child(5) {
+  transform: translateX(-50%) scale(1);
+  opacity: 1;
+  z-index: 3;
+}
+
+
+.carousel2 {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel2 img {
+  display: block;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  animation: slide 12s infinite;
+}
+
+.slides a {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.slides img {
+  width: 100%;
+  display: block;
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0%); }
+  20%  { transform: translateX(0%); }
+  25%  { transform: translateX(-100%); }
+  45%  { transform: translateX(-100%); }
+  50%  { transform: translateX(-200%); }
+  70%  { transform: translateX(-200%); }
+  75%  { transform: translateX(-300%); }
+  95%  { transform: translateX(-300%); }
+  100% { transform: translateX(0%); }
+}
+
+
+.ggg {
+  position: relative;
+  border-top: 2px solid black;
+  z-index: -1;
+}
+
+.space {
+  padding-top: 5%;
+}
+
+.space2 {
+  padding-top: 1%;
+}
+
+.space3 {
+  padding-bottom: 5%;
+}
+
+.description {
+  position: absolute;
+  top: 30%;
+  margin: auto;
+  padding: 2rem;
+}
+
+.description2 {
+  margin: auto;
+}
+
+
+/* Gallery / Lightbox */
+.gallery-block {
+  padding-bottom: 20px;
+}
+
+.MINUS3 {
+  padding-bottom: 0px;
+}
+
+.gallery-block.compact-gallery .item { overflow: hidden; margin-bottom: 0px; opacity: 1; border: 0; }
+.gallery-block.compact-gallery .item .image { transition: 0.8s ease; }
+.gallery-block.compact-gallery .item .description {
+  display: grid;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0 15px 0;
+  color: snow;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.39));
+  opacity: 1;
+  transition: 0.8s ease;
+}
+
+.gallery-block.compact-gallery .item { overflow: hidden; margin-bottom: 0px; opacity: 1; border: 0; }
+.gallery-block.compact-gallery .item .image { transition: 0.8s ease; }
+.gallery-block.compact-gallery .item .description2 {
+  display: grid;
+  position: absolute;
+  border-radius: 16px;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  padding: 10px 0 15px 0;
+  color: snow;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.39));
+  opacity: 1;
+  transition: 0.8s ease;
+}
+
+/* Accordion / Forms / Social Icons */
+a.social { text-decoration: none; }
+a.social:hover { color: #F7E8E8; text-decoration: none; cursor: pointer; transition: 0.3s; }
+
+/* ======================================
+   MEDIA QUERIES
+   ====================================== */
+
+@media (max-width: 768.5px) {
+  .bground2 {
+    width: 40%;
+    height: 18vh;
+    background: #A4BAA8;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .logo { width: 150px; }
+  body { background-color: #F7E8E8; cursor: url(../img/STARS-OF-SAM.png), auto; }
+}
+
+@media (max-width: 540px) { .logo { width: 110px; } }
+
+@media (min-width: 768.5px) {
+  .bground2 {
+    width: 55%;
+    height: 18vh;
+    background: #A4BAA8;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  body {
+    background-color: #F7E8E8;
+    background-repeat: repeat;
+    background-size: 30%;
+    background-position: center;
+    cursor: url(../img/STARS-OF-SAM.png), auto;
+  }
+
+  /* Background image layer TOP */
+  .D8::before {
+    content: "";
+    position: absolute;
+    margin-top: 26.5%;              /* start from vertical center */
+    top: 0%;
+    left: 50%;             /* horizontal center */
+    width: 100%;
+    aspect-ratio: 1.5 / 0.8;   /* square image */
+    opacity: 0.2;
+    background: url("../Neda Beauty/2/Exosomes-salmon-dna-pdrn-needling-Bella-Vista.jpeg") center no-repeat;
+    background-size: cover; /* show entire image, no cropping */
+    transform: translate(-50%, -50%); /* center the image perfectly */
+    z-index: -1;
+  }
+
+
+
+
+
+  .padding0 {
+    padding-top: 2%;
+  }
+
+}
+
+/* Gallery / Lightbox responsive */
+@media (min-width: 769px) {
+  .gallery-block.compact-gallery .item .description { opacity: 0; }
+  .gallery-block.compact-gallery .item a:hover .description { opacity: 1; }
+  .gallery-block .zoom-on-hover:hover .image { transform: scale(1.3); opacity: 0.6; }
+}
+
+@media (min-width: 769px) {
+  .gallery-block.compact-gallery .item .description2 { opacity: 0; }
+  .gallery-block.compact-gallery .item a:hover .description2 { opacity: 1; }
+  .gallery-block .zoom-on-hover:hover .image { transform: scale(1.3); opacity: 0.6; }
+}
+
+
+@media (max-width: 769px) {
+  .gallery-block .image { opacity: 0.75; }
+  .gallery-block .zoom-on-hover:hover .image { transform: scale(1.3); opacity: 0.6; }
+}
+
+/* Typography / Max Class responsive adjustments */
+@media (max-width: 364px) {
+  [class*="Max"] { font-size: 90%; margin-left: 1.5%; margin-right: 5%; margin-top: 0; margin-bottom: 0; font-weight: bold; color: snow; }
+}
+
+@media (max-width: 336px) { [class*="Max"] { font-size: 80%; } }
+@media (max-width: 308px) { [class*="Max"] { font-size: 64%; } }
+
+/* ======================================
+   ANIMATIONS
+   ====================================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease;
+  text-align: center;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.slide-in {
+  transform: translateX(100%); /* start off-screen to the left */
+  opacity: 0;                   /* invisible at start */
+  animation: slideIn 1s forwards;/* apply animation */
+  height: 18vh;
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0); /* end at original position */
+    opacity: 1;               /* fully visible */
+  }
+}
+
+
+.fair {
+justify-content: space-around;
+   }
+
+
+.title0 {
+     font-family: "Exo 2", sans-serif;
+     font-weight: 750;
+     font-size: 6vw;
+     color: black;
+     z-index: 1;
+   }
+
+      .title3 {
+        font-family: "Exo 2", sans-serif;
+        font-weight: 550;
+        font-size: 3.5vw;
+        color: black;
+        z-index: 1;
+         }
+
+         .title5 {
+              font-family: "Exo 2", sans-serif;
+              font-weight: 525;
+              font-size: 2vw;
+              color: black;
+              z-index: 1;
+            }
+
+.z {
+z-index: 1;
+}
+
+.colour {
+  color: #F7E8E8;
+}
+
+.s {
+  transform: translateX(-8%); /* start off-screen to the left */
+  opacity: 1;
+  animation: s 4s ease forwards;/* apply animation */
+  position: absolute;
+  pointer-events: none;
+  background-color: #F3F3F3;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+@keyframes s {
+  to {
+    transform: translateX(-110%); /* end at original position */
+    opacity: 1;               /* fully visible */
+  }
+}
+
+
+.ss {
+  transform: translateX(0); /* start off-screen to the left */
+  opacity: 1;
+  animation: ss 3s ease forwards;/* apply animation */
+  position: Fixed;
+  pointer-events: none;
+  background-color: #F3F3F3;
+  width: 55%;
+  height: 100vh;
+  z-index: 200;
+}
+
+@keyframes ss {
+  to {
+    transform: translateX(-110%); /* end at original position */
+    opacity: 1;               /* fully visible */
+  }
+}
+
+
+
+
+.sss {
+  transform: translateX(125%); /* start off-screen to the left */
+  opacity: 1;
+  animation: sss 3s ease forwards;/* apply animation */
+  position: Fixed;
+  pointer-events: none;
+  background-color: #F3F3F3;
+  width: 45%;
+  height: 100vh;
+  z-index: 200;
+}
+
+@keyframes sss {
+  to {
+    transform: translateX(225%); /* end at original position */
+    opacity: 1;               /* fully visible */
+  }
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.icon1:hover {
+  background-color: #3b5999;
+  color: white;
+}
+
+.icon2:hover {
+  background-color: #e1306c;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+/* =========================
+   HIDE CHECKBOX
+   ========================= */
+#menu-toggle {
+  display: none;
+}
+
+/* =========================
+   DESKTOP DEFAULT NAV
+   ========================= */
+
+/* Burger hidden on desktop */
+.BT {
+  width: 30px;
+  height: 22px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 50;
+  margin-left: 50%;
+}
+
+/* Burger bars */
+.BT span {
+  height: 3px;
+  background: #000;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+
+@media (max-width: 991.5px) {
+.vanish5 {
+      display: none; /* This makes the image disappear */
+  }
+}
+
+@media (min-width: 991.5px) {
+.vanish6 {
+      display: none; /* This makes the image disappear */
+  }
+}
+
+
+/* Desktop nav list */
+@media (min-width: 769px) {
+
+
+
+  .margin-and-Bigger-text2 {
+    margin-top: 10%;
+      font-size: 4vw;
+  }
+
+  .margin-and-Bigger-text3 {
+    margin-bottom: 8%;
+      font-size: 4vw;
+  }
+
+
+
+
+  .D4{
+    position: relative;
+    overflow: visible;     /* allow image to spill outside the div */
+    padding: 0% 5%;           /* padding for your text */
+    color: Black;          /* optional: text contrast */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centers text vertically in available space */
+  }
+
+
+
+  .card {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50vw;
+    height: 84vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    transform: translateX(-50%) scale(0.7);
+    opacity: 0.5;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    cursor: pointer;
+    border: 0px;
+  }
+
+
+  .space4 {
+    padding: 5vw 5%;
+}
+
+.space6 {
+  padding-bottom: 5%;
+}
+
+  .hh {
+    color: black;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 250;
+    font-size: 2.4vw;
+    position: relative;
+  transition: color 0.2s ease;
+  }
+
+  .store-hours dt {
+    /* Takes up 50% width for the day name */
+    font-size: 1.8vw;
+    flex-basis: 50%;
+    padding: 1px 0;
+    font-weight: bold;
+  }
+
+  .store-hours dd {
+    /* Takes up 50% width for the time */
+    font-size: 1.8vw;
+    flex-basis: 50%;
+    padding: 1px 0;
+    margin: 0; /* Remove default margin */
+    text-align: right; /* Aligns the text to the right */
+  }
+
+.cut{
+      margin-top: 0px;
+          padding: 0px 0px;
+}
+
+  /* Buttons */
+  button {
+      font-family: serif;
+      font-weight: bold;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 12px 20px;
+    font-size: 1.7vw;
+    border-radius: 25px;
+      color: white;
+    background-color: #d3d6c9;
+        opacity: 0.85;
+  }
+
+  button:hover {
+      font-size: 2vw;
+    opacity: 1;
+    color: #dca070;
+        background-color: #ffe0c0;
+  }
+
+  button:active {
+      font-size: 1.7vw;
+    opacity: 0.85;
+      color: white;
+  }
+
+  .icon1,.icon2{
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px;
+    width: 5vw;
+    height: 5vw;
+    font-size: 2vw;
+    line-height: 250%;
+    display: inline-block;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+    color: black;
+    text-decoration: none;
+  }
+
+  .testimonals {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 250;
+    font-size: 130%;
+    color: grey;
+  }
+
+
+  .fancy-quote {
+    font-family: "Exo 2", sans-serif;
+    position: relative;
+    padding: 30px 4px 50px;
+  }
+
+  .fancy-quote::before,
+  .fancy-quote::after {
+    position: absolute;
+    font-size: 80px;
+    color: black;
+    font-weight: bold;
+    line-height: 1;
+    pointer-events: none;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    /* 👇 Add subtle breathing animation */
+    animation: breathe 2s ease-in-out infinite;
+  }
+
+
+
+  .zoom {
+    transition: transform .2s; /* Animation */
+    opacity: 0.8;
+  }
+
+  .zoom:hover {
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      opacity: 1;
+  }
+
+  /* Media query to apply styles when the screen width is 768px or less */
+      .vanish {
+          display: none; /* This makes the image disappear */
+      }
+
+  .title {
+       font-family: "Exo 2", sans-serif;
+       font-weight: 750;
+       font-size: 5vw;
+       color: black;
+       padding: 8% 20% 0% 7%;
+     }
+
+        .title2 {
+             font-weight: 525;
+             font-size: 3.5vw;
+             padding: 5% 20% 0% 7%;
+             z-index: 1;
+           }
+
+           .title4 {
+                font-family: "Exo 2", sans-serif;
+                font-weight: 525;
+                font-size: 2.5vw;
+                color: black;
+              }
+
+
+              input, textarea {
+                  width: 100%;
+                  border: none;
+                  padding-top: 3%;
+                  background: transparent;
+                  font-size: 1.5vw;
+              }
+
+/* Navigation */
+.nev {
+  display: flex;
+  justify-self: center;
+}
+
+.nev ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  margin: 0;
+  padding: 0;
+  font-size: 1.6vw;
+ }
+
+
+ summary {
+   list-style: none;
+   cursor: pointer;
+   font-size: 2.5vw;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ /* Modal content box */
+ .modal-content {
+   background-color: white;
+   margin: auto;
+   padding: 10px 20px 20px 20px;
+   width: 50vw;
+   height: 100%;
+   border-radius: 8px;
+     z-index: 1000;
+ }
+
+ /* Close button */
+ .close-button {
+   font-size: 28px;
+   cursor: pointer;
+ }
+
+
+}
+
+/* Close button hidden on desktop */
+.close-btn {
+  display: none;
+}
+
+
+
+.title6 {
+     font-weight: 525;
+     font-size: 8vw;
+     z-index: 1;
+     margin-bottom: 0rem;
+   }
+
+
+/* =========================
+   MOBILE OVERRIDES
+   ========================= */
+@media (max-width: 768px) {
+
+  /* Background image layer TOP */
+  .D8::before {
+    margin-top: 62.5%;
+    content: "";
+    position: absolute;
+    top: 0%;              /* start from vertical center */
+    left: 50%;             /* horizontal center */
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1 / 1;   /* square image */
+    opacity: 0.1;
+    background: url("../Neda Beauty/5/skin-needling-hyaluronic-acid-serum-Bella-Vista.jpeg") center no-repeat;
+    background-size: contain; /* show entire image, no cropping */
+    transform: translate(-50%, -50%); /* center the image perfectly */
+    z-index: -1;
+  }
+
+
+
+  .card {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 75vw;
+    height: 84vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    transform: translateX(-50%) scale(0.7);
+    opacity: 0.5;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    cursor: pointer;
+    border: 0px;
+  }
+
+
+
+  .padding0 {
+    padding-top: 2%;
+  }
+
+  .hh {
+    color: black;
+    font-family: "Exo 2", sans-serif;
+    font-weight: 250;
+    font-size: 4vw;
+    position: relative;
+    z-index: 1;
+  transition: color 0.2s ease;
+  }
+
+  .store-hours dt {
+    /* Takes up 50% width for the day name */
+    font-size: 4vw;
+    flex-basis: 40%;
+    padding: 5px 0;
+    font-weight: bold;
+  }
+
+  .store-hours dd {
+    /* Takes up 50% width for the time */
+    font-size: 4vw;
+    flex-basis: 60%;
+    padding: 5px 0;
+    margin: 0; /* Remove default margin */
+    text-align: right; /* Aligns the text to the right */
+  }
+
+  /* Buttons */
+  button {
+      font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 12px 20px;
+          font-size: 3.2vw;
+    border-radius: 25px;
+      color: white;
+    background-color: #d3d6c9;
+        opacity: 0.85;
+  }
+
+  button:hover {
+      font-size: 3.5vw;
+    opacity: 1;
+    color: #dca070;
+        background-color: #ffe0c0;
+  }
+
+  button:active {
+          font-size: 3.2vw;
+    opacity: 0.85;
+      color: white;
+  }
+
+  .icon1,.icon2{
+    position: relative;
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px;
+    width: 10vw;
+    height: 10vw;
+    font-size: 4vw;
+    line-height: 250%;
+    display: inline-block;
+    align-items: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+    color: black;
+    text-decoration: none;
+  }
+
+  .testimonals {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 250;
+    font-size: 3vw;
+    color: grey;
+  }
+
+  .fancy-quote {
+    font-family: "Exo 2", sans-serif;
+    position: relative;
+    padding: 25px 4px 40px;
+  }
+
+  .fancy-quote::before,
+  .fancy-quote::after {
+    position: absolute;
+    font-size: 60px;
+    color: black;
+    font-weight: bold;
+    line-height: 1;
+    pointer-events: none;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    /* 👇 Add subtle breathing animation */
+    animation: breathe 2s ease-in-out infinite;
+  }
+
+  /* Media query to apply styles when the screen width is 768px or less */
+      .vanish2 {
+          display: none; /* This makes the image disappear */
+      }
+
+      .space5 {
+        padding-bottom: 17%;
+      }
+
+      .Bigger-text-h1 {
+            font-size: 5vw;
+      }
+
+      .Bigger-text-h2 {
+            font-size: 6vw;
+      }
+
+      .Bigger-text-h3 {
+            font-size: 7vw;
+      }
+
+      .Bigger-text-a {
+            font-size: 4vw;
+      }
+
+      .margin-and-Bigger-text {
+        margin-bottom: 8%;
+          font-size: 3.2vw;
+      }
+
+      .margin-and-Bigger-text2 {
+        margin-top: 22%;
+          font-size: 4vw;
+      }
+
+      .margin-and-Bigger-text3 {
+        margin-bottom: 8%;
+          font-size: 4vw;
+      }
+
+      /* Background image layer TOP */
+      .D6::before {
+        margin-top: 40%;
+        content: "";
+        position: absolute;
+        top: 0%;              /* start from vertical center */
+        left: 50%;             /* horizontal center */
+        width: 100%;
+        aspect-ratio: 1 / 1;   /* square image */
+        opacity: 0.1;
+        background: url("../Neda Beauty/11/cosmedix-skincare-stockist-shelves-Bella-Vista-sydney.JPG") center no-repeat;
+        background-size: contain; /* show entire image, no cropping */
+        transform: translate(-50%, -50%); /* center the image perfectly */
+        z-index: -1;
+      }
+
+      /* Background image layer TOP */
+      .D7::before {
+        margin-top: 40%;
+        content: "";
+        position: absolute;
+        top: 0%;              /* start from vertical center */
+        left: 50%;             /* horizontal center */
+        width: 100%;
+        aspect-ratio: 1 / 1;   /* square image */
+        opacity: 0.2;
+        background: url("../Neda Beauty/1/neda-beauty-skin-specialist-treatment-room-Bella-Vista.jpeg") center no-repeat;
+        background-size: contain; /* show entire image, no cropping */
+        transform: translate(-50%, -50%); /* center the image perfectly */
+        z-index: -1;
+      }
+
+  .title {
+       font-family: "Exo 2", sans-serif;
+       font-weight: 750;
+       font-size: 6vw;
+       color: black;
+       padding: 8% 2% 2% 7%;
+       z-index: -1;
+     }
+
+
+        .title2 {
+             font-weight: 525;
+             font-size: 4vw;
+             padding: 0% 20% 5% 7%;
+             z-index: 1;
+             margin-bottom: 0rem;
+           }
+
+           .title4 {
+                font-family: "Exo 2", sans-serif;
+                font-weight: 525;
+                font-size: 5vw;
+                color: black;
+              }
+
+              input, textarea {
+                  width: 100%;
+                  border: none;
+                  background: transparent;
+                  font-size: 4vw;
+              }
+
+  /* Show burger */
+  .BT {
+    display: flex;
+  }
+
+  /* Fullscreen mobile menu */
+  .nev {
+    position: fixed;
+    inset: 0;
+    background: black;
+    display: flex;
+    justify-content: flex-start;
+    overflow-y: auto;
+    transform: translateY(-100%);
+    transition: transform 0.4s ease;
+    z-index: 3000;
+  }
+
+  /* Mobile nav list */
+  .nev ul {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .nev a {
+    color: #fff;
+    font-size: 2rem;
+  }
+
+
+  /* Toggle menu */
+  #menu-toggle:checked ~ .nev{
+    transform: translateY(0);
+  }
+
+  /* Expand header height when the menu is open */
+.header:has(#menu-toggle:checked) {
+  height: 100vh; /* Or any specific expanded height like 400px */
+  transition: height 0.3s ease-in-out;
+}
+
+/* Disable scrolling when the menu-toggle is checked */
+body:has(#menu-toggle:checked) {
+  overflow: hidden;
+  height: 100vh; /* Ensures the height is locked to the viewport */
+}
+
+
+
+
+
+  /* Close button */
+  .close-btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1002;
+  }
+
+
+  summary {
+    list-style: none;
+    cursor: pointer;
+    font-size: 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+
+
+
+
+  /* Modal content box */
+  .modal-content {
+    background-color: white;
+    margin: auto;
+    width: 100vw;
+    height: 100%;
+    border-radius: 8px;
+      z-index: 9000;
+  }
+
+  /* Close button */
+  .close-button {
+    padding-left: 2%;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Modal background */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+details {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Plus / minus icon */
+summary::after {
+  content: "+";
+  font-size: 22px;
+}
+
+details[open] summary::after {
+  content: "−";
+}
+
+.price {
+  margin-left: auto;
+  margin-right: 20px;
+  font-weight: normal;
+}
+
+details p {
+  margin-top: 12px;
+  color: black;
+  line-height: 1.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1861px) {
+  /* Media query to apply styles when the screen width is 768px or less */
+      .vanish4 {
+          display: none; /* This makes the image disappear */
+      }
+}
+
+
+
+@media (max-width: 1860px) {
+  /* Media query to apply styles when the screen width is 768px or less */
+      .vanish3 {
+          display: none; /* This makes the image disappear */
+      }
+}
+
+</style>
+
+  </head>
+   <body>
+     <!-- navbar -->
+     <div class="fade-down">
+       <div class="bground">
+       </div>
+       <div class="bground2">
+       </div>
+       <header class="custom-navbar header">
+
+         <input type="checkbox" id="menu-toggle" />
+          <!-- Burger icon -->
+         <label class="BT" for="menu-toggle">
+           <span></span>
+           <span></span>
+           <span></span>
+         </label>
+
+         <!-- Fullscreen mobile menu -->
+           <nav class="nev">
+            <ul>
+              <!-- Close button -->
+              <label for="menu-toggle" class="close-btn">&times;</label>
+
+              <li><a class="custom-nav-link" href="index.html" title="Home"> Home</a></li>
+              <li><a class="custom-nav-link on" href="Treatments.html" title="TREATMENTS"> TREATMENTS</a></li>
+              <li><a class="custom-nav-link" href="Contact.html" title="Contact"> Contact</a></li>
+               </ul>
+             </nav>
+
+
+             <div class="logo Max">
+               <picture>
+                   <source srcset="img/logodesktop.jpg" media="(min-width: 628px)">
+                   <source srcset="img/logomobile.jpg" media="(max-width: 628px)">
+                   <img class="slide-in" src="img/logodesktop.jpg" alt="Neda Beauty Skin Clinic Bella Vista Logo" class="logo">
+               </picture>
+             </div>
+
+             <!-- The Main Header Button -->
+             <a class="button Bigger-text-a grow-text booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26params%3D%25253fclient-login%25253dtrue">BOOK NOW</a>
+
+         </header>
+     </div>
+
+     <!-- Content goes here -->
+<div class="container">
+  <section class="gallery-block compact-gallery">
+              <div class="row">
+                            <div class="vanish5 padding2 col-md-6 col-lg-6 col-xl-6">
+                                              <h1 class="padding">FACIALS</h1>
+                                                        <details>
+                                                          <summary>
+                                                            Hydra Glow Signature Deluxe Facial <span class="price">$250</span>
+                                                          </summary>
+                                                          <div class="row">
+                                                              <p class="col-6">1 Hour, 30 Minutes</p>
+                                                              <!-- Treatment Specific Button -->
+                                                              <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3614248%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3614248%25253aSV">Book</button>
+                                                          </div>
+
+                                                          <p>
+                                                            What is Hydra Glow Signature Facial?
+                                                            Our most loved hydration treatment, fully customized for your unique skin. This deluxe facial combines deep moisture infusion with a relaxing face and neck massage to release tension and boost circulation. We tailor every step to your skin’s specific needs, leaving you feeling deeply relaxed and your complexion looking plump, fresh, and incredibly glowing.
+                                                          </p>
+                                                        </details>
+
+                                                        <details>
+                                                          <summary>
+                                                            Cosmedix Medi Facial <span class="price">$179</span>
+                                                          </summary>
+                                                          <div class="row">
+                                                              <p class="col-6">1 Hour</p>
+                                                              <!-- Treatment Specific Button -->
+                                                              <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3553508%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3553508%25253aSV">Book</button>
+                                                          </div>
+
+                                                          <p>
+                                                            The perfect introduction to the Cosmedix line. During this fully customized experience, this treatment will include double cleansing,exfoliation, extractions (if necessary), and a custom mask catered to your skin. Great for all skin conditions and concerns.
+                                                          </p>
+                                                        </details>
+
+                                                        <details>
+                                                          <summary>
+                                                            Bio-Calm Shield Facial <span class="price">$250</span>
+                                                          </summary>
+
+                                                          <div class="row">
+                                                                        <p class="col-6">1 Hour</p>
+                                                                        <!-- Treatment Specific Button -->
+                                                                        <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D5072957%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d5072957%25253aSV">Book</button>
+                                                                    </div>
+
+                                                          <p>
+                                                            A specialized treatment designed for hyper-reactive and fragile complexions. Using advanced biomimetic peptides, this facial mimics the skin’s natural chemistry to rebuild a compromised lipid barrier. It works by "silencing" the inflammatory response, instantly reducing visible redness and heat while strengthening the skin’s immunity against external irritants.
+                                                          </p>
+                                                        </details>
+
+                                                        <details>
+                                                          <summary>
+                                                            Oxygen Infusion Facial <span class="price">$169</span>
+                                                          </summary>
+
+                                                          <div class="row">
+                                                                        <p class="col-6">1 Hour</p>
+                                                                          <!-- Treatment Specific Button -->
+                                                                            <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D4172246%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d4172246%25253aSV">Book</button>
+                                                                        </div>
+                                                          <p>
+                                                            Working to deliver stable oxygen, nutrients, and a fresh blood supply to the epidermal/dermal junction, The O2 Oxygen Mask removes any toxins and waste from your cells that could potentially lead to blemishes and breakouts.
+
+                                                            This treatment helps to detox your skin from the waste and cells that build up over time, targeting the toxins even your skincare struggles to get to. This gentle but results-driven approach leaves the skin soft, hydrated and bright through a hands-on approach.
+                                                          </p>
+                                                        </details>
+
+                                                        <details>
+                                                          <summary>
+                                                            Essential Express Facial <span class="price">$79</span>
+                                                          </summary>
+                                                          <div class="row">
+                                                                        <p class="col-6">30 Minutes</p>
+                                                                        <!-- Treatment Specific Button -->
+                                                                        <button class="col-6 booking-btn" data-url="
+                                                                        https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3553499%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3553499%25253aSV">Book</button>
+                                                                    </div>
+                                                          <p>
+                                                            Our Express Facial is designed for those who want a quick, refreshing boost for their skin without the time commitment of a full treatment. In just 30 minutes, this service deeply cleanses, exfoliates, and hydrates your skin—leaving you glowing and revitalized.
+                                                            Perfect for:
+                                                            Busy schedules
+                                                            A quick pick-me-up before an event
+                                                            Maintaining your skincare routine between full treatments
+                                                          </p>
+                                                        </details>
+
+
+
+
+
+
+                                                        <details>
+                                                          <summary>
+                                                            Hydra Dermabrasion Facial <span class="price">$199</span>
+                                                          </summary>
+                                                          <div class="row">
+                                                                        <p class="col-6">1 Hour</p>
+                                                                        <!-- Treatment Specific Button -->
+                                                                        <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3553514%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3553514%25253aSV">Book</button>
+                                                                    </div>
+                                                          <p>
+                                                            Hydra Dermabrasion also known as Hydrafacial treatment is the latest a multi-step treatment that uses non-invasive technology to cleanse, exfoliate, extract, hydrate and rejuvenate the skin. During the treatment dead skin cells and impurities are removed and the skin is hydrated with antioxidants and peptides.
+                                                          </p>
+                                                        </details>
+
+                                                        <details>
+                                                          <summary>
+                                                            Microdermabrasion <span class="price">$99</span>
+                                                          </summary>
+                                                          <div class="row">
+                                                                        <p class="col-6">45 Minutes</p>
+                                                                        <!-- Treatment Specific Button -->
+                                                                        <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3553527%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3553527%25253aSV">Book</button>
+                                                                    </div>
+                                                          <p>
+                                                            Microdermabrasion is a mechanical exfoliation treatment that gently sloughs away dead surface skin cells and creates a smoother, softer appearance.
+                                                          </p>
+                                                        </details>
+
+                                                        <details>
+                                                          <summary>
+                                                            Blemish Defense/Youth Protocol <span class="price">$99</span>
+                                                          </summary>
+
+                                                          <div class="row">
+                                                                        <p class="col-6">45 Minutes</p>
+                                                                        <!-- Treatment Specific Button -->
+                                                                        <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3734653%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3734653%25253aSV">Book</button>
+                                                                    </div>
+                                                          <p>
+                                                            Specifically designed for active, young skin, this protocol targets the root causes of breakouts. We focus on deep pore extraction, oil stabilization, and calming inflammation. It’s a gentle yet intensive treatment to restore balance and provide a healthy, matte finish for teens and young adults.
+                                                          </p>
+                                                        </details>
+
+                                                        <details>
+                                                          <summary>
+                                                            Dermaplaning <span class="price">$99</span>
+                                                          </summary>
+                                                          <div class="row">
+                                                                        <p class="col-6">45 Minutes</p>
+                                                                        <!-- Treatment Specific Button -->
+                                                                        <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D4172265%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d4172265%25253aSV">Book</button>
+                                                                    </div>
+                                                          <p>
+                                                            Our dermaplaning treatment uses a specialized surgical blade, expertly glided at a precise 45° angle, to gently exfoliate the skin. This process effectively removes dead skin cells, fine hair, and the topmost layer of congestion, unveiling fresh, vibrant skin underneath. The result is a complexion that feels luxuriously soft and looks radiant, with a renewed clarity and smoothness.
+                                                          </p>
+                                                        </details>
+                          </div>
+
+
+                          <div class="carousel2 fade-up col-12 col-md-12 col-lg-6 col-xl-6 px-0 item">
+                                  <div class="slides lightbox">
+                                    <a class="zoom-on-hover" href="Neda Beauty/5/oxygen-infusion-facial-detox-treatment-Bella-Vista.jpeg">
+                                      <img class="img-fluid image" src="Neda Beauty/5/oxygen-infusion-facial-detox-treatment-Bella-Vista.jpeg" alt="Oxygen Infusion Facial at Neda Beauty Bella Vista using an O2 mask to detoxify skin and deliver nutrients for a bright complexion." title="O2 Oxygen Infusion - Detox & Brighten.">
+                                    </a>
+                                    <a class="zoom-on-hover" href="Neda Beauty/5/hydra-glow-signature-deluxe-facial-Bella-Vista.jpeg">
+                                      <img class="img-fluid image" src="Neda Beauty/5/hydra-glow-signature-deluxe-facial-Bella-Vista.jpeg" alt="Neda Beauty Hydra Glow Signature Deluxe Facial featuring deep moisture infusion and relaxing neck massage in Bella Vista." title="Hydra Glow Signature Deluxe Facial - Neda Beauty.">
+                                    </a>
+                                    <a class="zoom-on-hover" href="Neda Beauty/5/dermaplaning-facial-peach-fuzz-removal-Bella-Vista.jpeg">
+                                      <img class="img-fluid image" src="Neda Beauty/5/dermaplaning-facial-peach-fuzz-removal-Bella-Vista.jpeg" alt="Professional dermaplaning at Neda Beauty Bella Vista using a surgical blade to remove dead skin cells and peach fuzz for a radiant complexion." title="Dermaplaning - Smooth & Radiant Skin.">
+                                    </a>
+                                    <a class="zoom-on-hover" href="Neda Beauty/5/bio-calm-shield-facial-sensitive-skin-Bella-Vista.jpeg">
+                                      <img class="img-fluid image" src="Neda Beauty/5/bio-calm-shield-facial-sensitive-skin-Bella-Vista.jpeg" alt="Bio-Calm Shield facial at Neda Beauty Bella Vista using biomimetic peptides to repair the lipid barrier and reduce skin redness." title="Bio-Calm Shield - Redness & Barrier Repair">
+                                    </a>
+                                  </div>
+                        </div>
+             </div>
+
+    <div class="vanish6 row">
+                <div class="col-12 D4">
+                      <h1 class="z padding0 Bigger-text-h3">FACIALS</h1>
+                          <details>
+                                <summary>
+                                  Hydra Glow Signature Deluxe Facial <span class="price">$250</span>
+                                </summary>
+                                <div class="row">
+                                              <p class="Bigger-text-a col-6">1 Hour, 30 Minutes</p>
+                                              <!-- Treatment Specific Button -->
+                                              <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3614248%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3614248%25253aSV">Book</button>
+                                          </div>
+                              <p class="Bigger-text-a">
+                                  What is Hydra Glow Signature Facial?
+                                  Our most loved hydration treatment, fully customized for your unique skin. This deluxe facial combines deep moisture infusion with a relaxing face and neck massage to release tension and boost circulation. We tailor every step to your skin’s specific needs, leaving you feeling deeply relaxed and your complexion looking plump, fresh, and incredibly glowing.
+                                </p>
+                          </details>
+
+                          <details>
+                                <summary>
+                                  Cosmedix Medi Facial <span class="price">$179</span>
+                                </summary>
+                                <div class="row">
+                                              <p class="Bigger-text-a col-6">1 Hour</p>
+                                              <!-- Treatment Specific Button -->
+                                              <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3553508%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3553508%25253aSV">Book</button>
+                                          </div>
+                              <p class="Bigger-text-a">
+                                The perfect introduction to the Cosmedix line. During this fully customized experience, this treatment will include double cleansing,exfoliation, extractions (if necessary), and a custom mask catered to your skin. Great for all skin conditions and concerns.
+                              </p>
+                          </details>
+
+                          <details>
+                                <summary>
+                                  Bio-Calm Shield Facial <span class="price">$250</span>
+                                </summary>
+                                <div class="row">
+                                              <p class="Bigger-text-a col-6">1 Hour</p>
+                                              <!-- Treatment Specific Button -->
+                                              <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D5072957%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d5072957%25253aSV">Book</button>
+                                          </div>
+                              <p class="Bigger-text-a">
+                                A specialized treatment designed for hyper-reactive and fragile complexions. Using advanced biomimetic peptides, this facial mimics the skin’s natural chemistry to rebuild a compromised lipid barrier. It works by "silencing" the inflammatory response, instantly reducing visible redness and heat while strengthening the skin’s immunity against external irritants.
+                              </p>
+                          </details>
+
+                          <details>
+                                <summary>
+                                  Oxygen Infusion Facial <span class="price">$169</span>
+                                </summary>
+                                <div class="row">
+                                              <p class="Bigger-text-a col-6">1 Hour</p>
+                                              <!-- Treatment Specific Button -->
+                                              <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D4172246%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d4172246%25253aSV">Book</button>
+                                          </div>
+                                <p class="Bigger-text-a">
+                                  Working to deliver stable oxygen, nutrients, and a fresh blood supply to the epidermal/dermal junction, The O2 Oxygen Mask removes any toxins and waste from your cells that could potentially lead to blemishes and breakouts.
+
+                                  This treatment helps to detox your skin from the waste and cells that build up over time, targeting the toxins even your skincare struggles to get to. This gentle but results-driven approach leaves the skin soft, hydrated and bright through a hands-on approach.
+                                </p>
+                        </details>
+
+                        <details>
+                              <summary>
+                                Essential Express Facial <span class="price">$79</span>
+                              </summary>
+                              <div class="row">
+                                            <p class="Bigger-text-a col-6">30 Minutes</p>
+                                            <!-- Treatment Specific Button -->
+                                            <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3553499%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3553499%25253aSV">Book</button>
+                                        </div>
+                                <p class="Bigger-text-a">
+                                  Our Express Facial is designed for those who want a quick, refreshing boost for their skin without the time commitment of a full treatment. In just 30 minutes, this service deeply cleanses, exfoliates, and hydrates your skin—leaving you glowing and revitalized.
+                                  Perfect for:
+                                  Busy schedules
+                                  A quick pick-me-up before an event
+                                  Maintaining your skincare routine between full treatments
+                                </p>
+                        </details>
+
+                        <details>
+                              <summary>
+                                Hydra Dermabrasion Facial <span class="price">$199</span>
+                              </summary>
+                              <div class="row">
+                                            <p class="Bigger-text-a col-6">1 Hour</p>
+                                            <!-- Treatment Specific Button -->
+                                            <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3553514%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3553514%25253aSV">Book</button>
+                                        </div>
+                                <p class="Bigger-text-a">
+                                  Hydra Dermabrasion also known as Hydrafacial treatment is the latest a multi-step treatment that uses non-invasive technology to cleanse, exfoliate, extract, hydrate and rejuvenate the skin. During the treatment dead skin cells and impurities are removed and the skin is hydrated with antioxidants and peptides.
+                                </p>
+                        </details>
+
+                        <details>
+                              <summary>
+                                Microdermabrasion <span class="price">$99</span>
+                              </summary>
+                              <div class="row">
+                                            <p class="Bigger-text-a col-6">45 Minutes</p>
+                                            <!-- Treatment Specific Button -->
+                                            <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3553527%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3553527%25253aSV">Book</button>
+                                        </div>
+                                <p class="Bigger-text-a">
+                                  Microdermabrasion is a mechanical exfoliation treatment that gently sloughs away dead surface skin cells and creates a smoother, softer appearance.
+                                </p>
+                        </details>
+
+                        <details>
+                              <summary>
+                                Blemish Defense/Youth Protocol <span class="price">$99</span>
+                              </summary>
+                              <div class="row">
+                                            <p class="Bigger-text-a col-6">45 Minutes</p>
+                                            <!-- Treatment Specific Button -->
+                                            <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3734653%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3734653%25253aSV">Book</button>
+                                        </div>
+                                <p class="Bigger-text-a">
+                                  Specifically designed for active, young skin, this protocol targets the root causes of breakouts. We focus on deep pore extraction, oil stabilization, and calming inflammation. It’s a gentle yet intensive treatment to restore balance and provide a healthy, matte finish for teens and young adults.
+                                </p>
+                        </details>
+
+                        <details>
+                              <summary>
+                                Dermaplaning <span class="price">$99</span>
+                              </summary>
+                              <div class="row">
+                                            <p class="Bigger-text-a col-6">45 Minutes</p>
+                                            <!-- Treatment Specific Button -->
+                                            <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D4172265%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d4172265%25253aSV">Book</button>
+                                        </div>
+                                <p class="Bigger-text-a">
+                                  Our dermaplaning treatment uses a specialized surgical blade, expertly glided at a precise 45° angle, to gently exfoliate the skin. This process effectively removes dead skin cells, fine hair, and the topmost layer of congestion, unveiling fresh, vibrant skin underneath. The result is a complexion that feels luxuriously soft and looks radiant, with a renewed clarity and smoothness.
+                                </p>
+                      </details>
+               </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="row">
+
+                    <div class="col-6 px-0 item zoom-on-hover D4">
+                                <a class="vanish5 lightbox" href="Neda Beauty/5/skin-needling-hyaluronic-acid-serum-Bella-Vista.jpeg">
+                                  <img class="vanish5 img-fluid image" src="Neda Beauty/5/skin-needling-hyaluronic-acid-serum-Bella-Vista.jpeg" alt="Clinical microneedling with targeted booster serum infusion to treat specific skin concerns at Neda Beauty." title="Microneedling with HA Serum.">
+                                </a>
+                  </div>
+
+                  <div class="vanish5 col-6">
+                    <h1 class="padding0 Bigger-text-h3">MICRO-NEEDLING</h1>
+                    <details>
+                      <summary>
+                        Skin Needling with HA serum <span class="price">$249</span>
+                      </summary>
+                      <div class="row">
+                              <p class="col-6 Bigger-text-a">30 Minutes</p>
+                                    <button id="openModal14" class="col-6">Book</button>
+                                    <!-- The Modal -->
+                                    <div id="siteModal14" class="modal">
+                                      <div class="modal-content">
+
+                                                                                <div class="row">
+                                                                                            <span class="col-6 close-button14">&times;</span>
+                                                                                                                                            <button id="openModal54" class="col-6 cut px-0">ADD MORE</button>
+                                                                                                                                            <!-- The Modal -->
+                                                                                                                                            <div id="siteModal54" class="modal">
+                                                                                                                                              <div class="modal-content">
+                                                                                                                                                <span class="close-button54">&times;</span>
+                                                                                                                                                  <!-- Replace the src with your desired URL -->
+                                                                                                                                                  <iframe src="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3614248%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3614248%25253aSV" width="100%" height="100%"></iframe>
+                                                                                                                                                </div>
+                                                                                                                                              </div>
+                                                                                                                                              <script>
+                                                                                                                                              const modal54 = document.getElementById("siteModal54");
+                                                                                                                                              const btn54 = document.getElementById("openModal54");
+                                                                                                                                              const span54 = document.querySelector(".close-button54");
+                                                                                                                                              // Open the modal
+                                                                                                                                              btn54.onclick = () => modal54.style.display = "block";
+                                                                                                                                              // Close the modal when clicking (x)
+                                                                                                                                              span54.onclick = () => modal54.style.display = "none";
+                                                                                                                                              </script>
+                                                                              </div>
+
+                                        <!-- Replace the src with your desired URL -->
+                                        <iframe src="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3553534%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3553534%25253aSV" width="100%" height="100%"></iframe>
+                                      </div>
+                                    </div>
+                          <script>
+                                  const modal14 = document.getElementById("siteModal14");
+                                  const btn14 = document.getElementById("openModal14");
+                                  const span14 = document.querySelector(".close-button14");
+
+                                  // Open the modal
+                                  btn14.onclick = () => modal14.style.display = "block";
+
+                                  // Close the modal when clicking (x)
+                                  span14.onclick = () => modal14.style.display = "none";
+                        </script>
+                      </div>
+
+
+                      <p class="Bigger-text-a">
+                        Micro-needling treatments stimulate the production of collagen to create smoother, firmer skin. It also reduces acne scarring, stretch marks, fine lines, pigmentation, enlarged pores and blackheads. The before and afters will amaze you.
+                      </p>
+                    </details>
+
+                    <details>
+                      <summary>
+                        BUNDLE: Skin Needling with HA serum x3 (TREATMENT SAVER) <span class="price">$520</span>
+                      </summary>
+                      <div class="row">
+                              <p class="col-6 Bigger-text-a">30 Minutes</p>
+                                    <button id="openModal15" class="col-6">Book</button>
+                                    <!-- The Modal -->
+                                    <div id="siteModal15" class="modal">
+                                      <div class="modal-content">
+                                        <span class="close-button15">&times;</span>
+                                        <!-- Replace the src with your desired URL -->
+                                        <iframe src="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D4847629%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d4847629%25253aSV" width="100%" height="100%"></iframe>
+                                      </div>
+                                    </div>
+                          <script>
+                                  const modal15 = document.getElementById("siteModal15");
+                                  const btn15 = document.getElementById("openModal15");
+                                  const span15 = document.querySelector(".close-button15");
+
+                                  // Open the modal
+                                  btn15.onclick = () => modal15.style.display = "block";
+
+                                  // Close the modal when clicking (x)
+                                  span15.onclick = () => modal15.style.display = "none";
+                        </script>
+                      </div>
+
+                      <p class="Bigger-text-a">
+                        Save 20%
+                      </p>
+                    </details>
+
+                    <details>
+                      <summary>
+                        Skin Needling with Booster serum suitable for skin concern <span class="price">$299</span>
+                      </summary>
+                      <div class="row">
+                              <p class="col-6 Bigger-text-a">40 Minutes</p>
+                                    <button id="openModal16" class="col-6">Book</button>
+                                    <!-- The Modal -->
+                                    <div id="siteModal16" class="modal">
+                                      <div class="modal-content">
+                                        <span class="close-button16">&times;</span>
+                                        <!-- Replace the src with your desired URL -->
+                                        <iframe src="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D4824006%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d4824006%25253aSV" width="100%" height="100%"></iframe>
+                                      </div>
+                                    </div>
+                          <script>
+                                  const modal16 = document.getElementById("siteModal16");
+                                  const btn16 = document.getElementById("openModal16");
+                                  const span16 = document.querySelector(".close-button16");
+
+                                  // Open the modal
+                                  btn16.onclick = () => modal16.style.display = "block";
+
+                                  // Close the modal when clicking (x)
+                                  span16.onclick = () => modal16.style.display = "none";
+                        </script>
+                      </div>
+                      <p class="Bigger-text-a">
+                        A cosmetic treatment that combines microneedling with the simultaneous infusion of specially formulated serums into the skin.
+                      </p>
+                    </details>
+
+                    <details>
+                      <summary>
+                        Skin Needling with Exosomes REVIVE NX  <span class="price">$469</span>
+                      </summary>
+                      <div class="row">
+                              <p class="col-6 Bigger-text-a">40 Minutes</p>
+                                    <button id="openModal17" class="col-6">Book</button>
+                                    <!-- The Modal -->
+                                    <div id="siteModal17" class="modal">
+                                      <div class="modal-content">
+                                        <span class="close-button17">&times;</span>
+                                        <!-- Replace the src with your desired URL -->
+                                        <iframe src="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D5073058%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d5073058%25253aSV" width="100%" height="100%"></iframe>
+                                      </div>
+                                    </div>
+                          <script>
+                                  const modal17 = document.getElementById("siteModal17");
+                                  const btn17 = document.getElementById("openModal17");
+                                  const span17 = document.querySelector(".close-button17");
+
+                                  // Open the modal
+                                  btn17.onclick = () => modal17.style.display = "block";
+
+                                  // Close the modal when clicking (x)
+                                  span17.onclick = () => modal17.style.display = "none";
+                        </script>
+                      </div>
+                      <p class="Bigger-text-a">
+                        Exosome Therapy: Cellular Rebirth.
+
+                        Experience the future of skincare. We use NX Exosomes tiny cellular messengers combined with Micro-needling to tell your skin to repair, renew, and produce collagen from within. It’s a biological reset for a flawless complexion.
+                        We exclusively use the Revive NX kit. This biotech powerhouse speeds up healing and transforms skin texture far beyond standard serums. Less downtime, more radiance.
+                      </p>
+                    </details>
+
+                    <details>
+                      <summary>
+                        Skin Needling (Face & Neck) with Exosomes & Salmon DNA <span class="price">$399</span>
+                      </summary>
+                      <div class="row">
+                              <p class="col-6 Bigger-text-a">45 Minutes</p>
+                                    <button id="openModal18" class="col-6">Book</button>
+                                    <!-- The Modal -->
+                                    <div id="siteModal18" class="modal">
+                                      <div class="modal-content">
+                                        <span class="close-button18">&times;</span>
+                                        <!-- Replace the src with your desired URL -->
+                                        <iframe src="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D4944998%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d4944998%25253aSV" width="100%" height="100%"></iframe>
+                                      </div>
+                                    </div>
+                          <script>
+                                  const modal18 = document.getElementById("siteModal18");
+                                  const btn18 = document.getElementById("openModal18");
+                                  const span18 = document.querySelector(".close-button18");
+
+                                  // Open the modal
+                                  btn18.onclick = () => modal18.style.display = "block";
+
+                                  // Close the modal when clicking (x)
+                                  span18.onclick = () => modal18.style.display = "none";
+                        </script>
+                      </div>
+
+                      <p class="Bigger-text-a">
+                        Infused with innovative ingredients like exosomes, PDRN (a whopping 3%), peptides, and hyaluronic acid, this powerful formula rejuvenates and revitalizes your complexion, promoting cell regeneration and enhancing skin texture.
+                      </p>
+                    </details>
+
+                    <details>
+                      <summary>
+                        BUNDLE: Skin Needling (Face & Neck) with Exosomes & Salmon DNA serum x5 (TREATMENT SAVER) <span class="price">$1,500</span>
+                      </summary>
+                      <div class="row">
+                              <p class="col-6 Bigger-text-a">45 Minutes</p>
+                                    <button id="openModal19" class="col-6">Book</button>
+                                    <!-- The Modal -->
+                                    <div id="siteModal19" class="modal">
+                                      <div class="modal-content">
+                                        <span class="close-button19">&times;</span>
+                                        <!-- Replace the src with your desired URL -->
+                                        <iframe src="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D4824014%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d4824014%25253aSV" width="100%" height="100%"></iframe>
+                                      </div>
+                                    </div>
+                          <script>
+                                  const modal19 = document.getElementById("siteModal19");
+                                  const btn19 = document.getElementById("openModal19");
+                                  const span19 = document.querySelector(".close-button19");
+
+                                  // Open the modal
+                                  btn19.onclick = () => modal19.style.display = "block";
+
+                                  // Close the modal when clicking (x)
+                                  span19.onclick = () => modal19.style.display = "none";
+                        </script>
+                      </div>
+                      <p class="Bigger-text-a">
+                        Infused with innovative ingredients like exosomes, PDRN (a whopping 3%), peptides, and hyaluronic acid, this powerful formula rejuvenates and revitalizes your complexion, promoting cell regeneration and enhancing skin texture.
+                      </p>
+                    </details>
+                 </div>
+
+                            <div class="vanish6 col-12 col-md-12 col-lg-6">
+                              <div class="D8">
+                              </div>
+                              <h1 class="z padding0 Bigger-text-h3">MICRO-NEEDLING</h1>
+                              <details>
+                                    <summary>
+                                      Skin Needling with HA serum <span class="price">$249</span>
+                                    </summary>
+                                    <div class="row">
+                                                  <p class="Bigger-text-a col-6">30 Minutes</p>
+                                                  <button id="openModal48" class="col-6">Book</button>
+                                                  <!-- The Modal -->
+                                                  <div id="siteModal48" class="modal">
+                                                    <div class="modal-content">
+                                                      <span class="close-button48">&times;</span>
+                                                      <!-- Replace the src with your desired URL -->
+                                                      <iframe src="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3553534%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3553534%25253aSV" width="100%" height="100%"></iframe>
+                                                    </div>
+                                                  </div>
+                                        <script>
+                                                const modal48 = document.getElementById("siteModal48");
+                                                const btn48 = document.getElementById("openModal48");
+                                                const span48 = document.querySelector(".close-button48");
+
+                                                // Open the modal
+                                                btn48.onclick = () => modal48.style.display = "block";
+
+                                                // Close the modal when clicking (x)
+                                                span48.onclick = () => modal48.style.display = "none";
+                                      </script>
+                                  </div>
+                                <p class="Bigger-text-a">
+                                  Micro-needling treatments stimulate the production of collagen to create smoother, firmer skin. It also reduces acne scarring, stretch marks, fine lines, pigmentation, enlarged pores and blackheads. The before and afters will amaze you.
+                                </p>
+                              </details>
+
+
+
+
+                              <details>
+                                    <summary>
+                                      BUNDLE: Skin Needling with HA serum x3 (TREATMENT SAVER) <span class="price">$520</span>
+                                    </summary>
+                                    <div class="row">
+                                                  <p class="Bigger-text-a col-6">30 Minutes</p>
+                                                  <button id="openModal49" class="col-6">Book</button>
+                                                  <!-- The Modal -->
+                                                  <div id="siteModal49" class="modal">
+                                                    <div class="modal-content">
+                                                      <span class="close-button49">&times;</span>
+                                                      <!-- Replace the src with your desired URL -->
+                                                      <iframe src="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D4847629%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d4847629%25253aSV" width="100%" height="100%"></iframe>
+                                                    </div>
+                                                  </div>
+                                        <script>
+                                                const modal49 = document.getElementById("siteModal49");
+                                                const btn49 = document.getElementById("openModal49");
+                                                const span49 = document.querySelector(".close-button49");
+
+                                                // Open the modal
+                                                btn49.onclick = () => modal49.style.display = "block";
+
+                                                // Close the modal when clicking (x)
+                                                span49.onclick = () => modal49.style.display = "none";
+                                      </script>
+                                  </div>
+
+                                <p class="Bigger-text-a">
+                                  Save 20%
+                                </p>
+                              </details>
+
+                              <details>
+                                    <summary>
+                                        Skin Needling with Booster serum suitable for skin concern <span class="price">$299</span>
+                                    </summary>
+                                    <div class="row">
+                                                  <p class="Bigger-text-a col-6">40 Minutes</p>
+                                                  <button id="openModal50" class="col-6">Book</button>
+                                                  <!-- The Modal -->
+                                                  <div id="siteModal50" class="modal">
+                                                    <div class="modal-content">
+                                                      <span class="close-button50">&times;</span>
+                                                      <!-- Replace the src with your desired URL -->
+                                                      <iframe src="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D4824006%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d4824006%25253aSV" width="100%" height="100%"></iframe>
+                                                    </div>
+                                                  </div>
+                                        <script>
+                                                const modal50 = document.getElementById("siteModal50");
+                                                const btn50 = document.getElementById("openModal50");
+                                                const span50 = document.querySelector(".close-button50");
+
+                                                // Open the modal
+                                                btn50.onclick = () => modal50.style.display = "block";
+
+                                                // Close the modal when clicking (x)
+                                                span50.onclick = () => modal50.style.display = "none";
+                                      </script>
+                                  </div>
+
+                                <p class="Bigger-text-a">
+                                  A cosmetic treatment that combines microneedling with the simultaneous infusion of specially formulated serums into the skin.
+                                </p>
+                              </details>
+
+                              <details>
+                                    <summary>
+                                        Skin Needling with Exosomes REVIVE NX  <span class="price">$469</span>
+                                    </summary>
+                                    <div class="row">
+                                                  <p class="Bigger-text-a col-6">40 Minutes</p>
+                                                  <button id="openModal51" class="col-6">Book</button>
+                                                  <!-- The Modal -->
+                                                  <div id="siteModal51" class="modal">
+                                                    <div class="modal-content">
+                                                      <span class="close-button51">&times;</span>
+                                                      <!-- Replace the src with your desired URL -->
+                                                      <iframe src="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D5073058%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d5073058%25253aSV" width="100%" height="100%"></iframe>
+                                                    </div>
+                                                  </div>
+                                        <script>
+                                                const modal51 = document.getElementById("siteModal51");
+                                                const btn51 = document.getElementById("openModal51");
+                                                const span51 = document.querySelector(".close-button51");
+
+                                                // Open the modal
+                                                btn51.onclick = () => modal51.style.display = "block";
+
+                                                // Close the modal when clicking (x)
+                                                span51.onclick = () => modal51.style.display = "none";
+                                      </script>
+                                  </div>
+
+                                <p class="Bigger-text-a">
+                                  Exosome Therapy: Cellular Rebirth.
+
+                                  Experience the future of skincare. We use NX Exosomes tiny cellular messengers combined with Micro-needling to tell your skin to repair, renew, and produce collagen from within. It’s a biological reset for a flawless complexion.
+                                  We exclusively use the Revive NX kit. This biotech powerhouse speeds up healing and transforms skin texture far beyond standard serums. Less downtime, more radiance.
+                                </p>
+                              </details>
+
+                              <details>
+                                    <summary>
+                                        Skin Needling (Face & Neck) with Exosomes & Salmon DNA <span class="price">$399</span>
+                                    </summary>
+                                    <div class="row">
+                                                  <p class="Bigger-text-a col-6">45 Minutes</p>
+                                                  <button id="openModal52" class="col-6">Book</button>
+                                                  <!-- The Modal -->
+                                                  <div id="siteModal52" class="modal">
+                                                    <div class="modal-content">
+                                                      <span class="close-button52">&times;</span>
+                                                      <!-- Replace the src with your desired URL -->
+                                                      <iframe src="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D4944998%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d4944998%25253aSV" width="100%" height="100%"></iframe>
+                                                    </div>
+                                                  </div>
+                                        <script>
+                                                const modal52 = document.getElementById("siteModal52");
+                                                const btn52 = document.getElementById("openModal52");
+                                                const span52 = document.querySelector(".close-button52");
+
+                                                // Open the modal
+                                                btn52.onclick = () => modal52.style.display = "block";
+
+                                                // Close the modal when clicking (x)
+                                                span52.onclick = () => modal52.style.display = "none";
+                                      </script>
+                                  </div>
+
+                                <p class="Bigger-text-a">
+                                  Infused with innovative ingredients like exosomes, PDRN (a whopping 3%), peptides, and hyaluronic acid, this powerful formula rejuvenates and revitalizes your complexion, promoting cell regeneration and enhancing skin texture.
+                                </p>
+                              </details>
+
+                              <details>
+                                    <summary>
+                                        BUNDLE: Skin Needling (Face & Neck) with Exosomes & Salmon DNA serum x5 (TREATMENT SAVER) <span class="price">$1,500</span>
+                                    </summary>
+                                    <div class="row">
+                                                  <p class="Bigger-text-a col-6">45 Minutes</p>
+                                                  <button id="openModal53" class="col-6">Book</button>
+                                                  <!-- The Modal -->
+                                                  <div id="siteModal53" class="modal">
+                                                    <div class="modal-content">
+                                                      <span class="close-button53">&times;</span>
+                                                      <!-- Replace the src with your desired URL -->
+                                                      <iframe src="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D4824014%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d4824014%25253aSV" width="100%" height="100%"></iframe>
+                                                    </div>
+                                                  </div>
+                                        <script>
+                                                const modal53 = document.getElementById("siteModal53");
+                                                const btn53 = document.getElementById("openModal53");
+                                                const span53 = document.querySelector(".close-button53");
+
+                                                // Open the modal
+                                                btn53.onclick = () => modal53.style.display = "block";
+
+                                                // Close the modal when clicking (x)
+                                                span53.onclick = () => modal53.style.display = "none";
+                                      </script>
+                                  </div>
+
+                                <p class="Bigger-text-a">
+                                  Infused with innovative ingredients like exosomes, PDRN (a whopping 3%), peptides, and hyaluronic acid, this powerful formula rejuvenates and revitalizes your complexion, promoting cell regeneration and enhancing skin texture.
+                                </p>
+                              </details>
+                           </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="row">
+
+                <div class="vanish col-12 col-md-6 col-lg-6 col-xl-6 px-0 item zoom-on-hover">
+                            <a class="lightbox" href="Neda Beauty/2/professional-waxing-services-Bella-Vista-sydney.jpeg">
+                              <img class="img-fluid image" src="Neda Beauty/2/professional-waxing-services-Bella-Vista-sydney.jpeg" alt="Clean and hygienic waxing treatment room at Neda Beauty Skin Clinic, Unit 3/261 Harris St." title="Professional Full Waxing Services.">
+                            </a>
+              </div>
+
+                                  <div class="col-12 col-md-6 col-lg-6 col-xl-6 D4">
+                                    <h1 class="padding0 Bigger-text-h3">WAXING</h1>
+                                    <details>
+                                      <summary>
+                                        Full legs <span class="price">$49</span>
+                                      </summary>
+
+                                      <div class="row">
+                                              <p class="col-6 Bigger-text-a">30 Minutes</p>
+                                              <!-- Treatment Specific Button -->
+                                              <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3553543%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3553543%25253aSV">Book</button>
+                                          </div>
+                                    </details>
+
+                                    <details>
+                                      <summary>
+                                        Full Arms <span class="price">$40</span>
+                                      </summary>
+                                      <div class="row">
+                                              <p class="col-6 Bigger-text-a">30 Minutes</p>
+                                              <!-- Treatment Specific Button -->
+                                              <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3553546%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3553546%25253aSV">Book</button>
+                                          </div>
+                                    </details>
+
+                                    <details>
+                                      <summary>
+                                        Bikini <span class="price">$40</span>
+                                      </summary>
+                                      <div class="row">
+                                              <p class="col-6 Bigger-text-a">20 Minutes</p>
+                                              <!-- Treatment Specific Button -->
+                                              <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3553548%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3553548%25253aSV">Book</button>
+                                          </div>
+                                    </details>
+
+                                    <details>
+                                      <summary>
+                                        Back <span class="price">$59</span>
+                                      </summary>
+                                      <div class="row">
+                                              <p class="col-6 Bigger-text-a">30 Minutes</p>
+                                              <!-- Treatment Specific Button -->
+                                              <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3553549%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3553549%25253aSV">Book</button>
+                                          </div>
+                                    </details>
+                              </div>
+
+                       <div class="vanish2 col-sm-12 col-md-6 col-lg-6 col-xl-6 px-0 item zoom-on-hover">
+                                   <a class="lightbox" href="Neda Beauty/2/professional-waxing-services-Bella-Vista-sydney.jpeg">
+                                     <img class="img-fluid image" src="Neda Beauty/2/professional-waxing-services-Bella-Vista-sydney.jpeg" alt="Clean and hygienic waxing treatment room at Neda Beauty Skin Clinic, Unit 3/261 Harris St." title="Professional Full Waxing Services.">
+                                   </a>
+                     </div>
+
+         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="row">
+
+                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 px-0 item zoom-on-hover">
+                                        <a class="lightbox" href="Neda Beauty/2/cosmedix-deep-sea-peel-Bella-Vista-nsw.jpeg">
+                                          <img class="img-fluid image" src="Neda Beauty/2/cosmedix-deep-sea-peel-Bella-Vista-nsw.jpeg" alt="Cosmedix Deep Sea Peel treatment for intense resurfacing and pigmentation at Neda Beauty." title="Deep Sea Peel by Cosmedix.">
+                                        </a>
+                          </div>
+
+                                              <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 D4">
+                                                <h1 class="padding0 Bigger-text-h3">COSMEDIX PEEL</h1>
+                                                <details>
+                                                  <summary>
+                                                    First level Peel <span class="price">$79</span>
+                                                  </summary>
+                                                  <div class="row">
+                                                          <p class="col-6 Bigger-text-a">30 Minutes</p>
+                                                          <!-- Treatment Specific Button -->
+                                                          <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3553554%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3553554%25253aSV">Book</button>
+                                                      </div>
+                                                </details>
+
+                                                <details>
+                                                  <summary>
+                                                    Level 2 cosmedix Peel <span class="price">$129</span>
+                                                  </summary>
+                                                  <div class="row">
+                                                          <p class="col-6 Bigger-text-a">30 Minutes</p>
+                                                          <!-- Treatment Specific Button -->
+                                                          <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3553740%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3553740%25253aSV">Book</button>
+                                                      </div>
+                                                </details>
+
+                                                <details>
+                                                  <summary>
+                                                      Advanced retinol peel <span class="price">$199</span>
+                                                  </summary>
+                                                  <div class="row">
+                                                          <p class="col-6 Bigger-text-a">30 Minutes</p>
+                                                          <!-- Treatment Specific Button -->
+                                                          <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3553742%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3553742%25253aSV">Book</button>
+                                                      </div>
+                                                </details>
+
+                                                <details>
+                                                  <summary>
+                                                    Deep sea peel Cosmedix <span class="price">$220</span>
+                                                  </summary>
+                                                  <div class="row">
+                                                          <p class="col-6 Bigger-text-a">30 Minutes</p>
+                                                          <!-- Treatment Specific Button -->
+                                                          <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3553746%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3553746%25253aSV">Book</button>
+                                                      </div>
+                                                </details>
+                                          </div>
+
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="row">
+                            <div class="vanish col-sm-12 col-md-6 col-lg-6 col-xl-6 px-0 item zoom-on-hover">
+                                      <a class="lightbox" href="Neda Beauty/2/full-body-exfoliation-skin-smoothing-Bella-Vista.jpeg">
+                                        <img class="img-fluid image" src="Neda Beauty/2/full-body-exfoliation-skin-smoothing-Bella-Vista.jpeg" alt="Full-body smoothing exfoliation and moisturising massage for refined skin texture at Neda Beauty." title="Full-body Smoothing Exfoliation.">
+                                      </a>
+                          </div>
+
+                                            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 D4">
+                                              <h1 class="padding0 Bigger-text-h3">BODY FACIAL TREATMENTS</h1>
+
+                                              <details>
+                                                <summary>
+                                                  Booty Hydra <span class="price">$99</span>
+                                                </summary>
+                                                <div class="row">
+                                                        <p class="col-6 Bigger-text-a">45 Minutes</p>
+                                                        <!-- Treatment Specific Button -->
+                                                        <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3737857%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3737857%25253aSV">Book</button>
+                                                    </div>
+                                                <p class="Bigger-text-a">
+                                                  Improve the texture and appearance of your booty! This treatment is perfect if you have acne or pigmentation or if you want to have a flawless-looking bottom for summer. This treatment begins with steam and a cleanse followed by our 3-step Signature HydraFacial.</p>
+                                              </details>
+
+                                            <details>
+                                                    <summary>
+                                                        Back Hydra <span class="price">$179</span>
+                                                    </summary>
+                                                    <div class="row">
+                                                            <p class="col-6 Bigger-text-a">45 Minutes</p>
+                                                            <!-- Treatment Specific Button -->
+                                                            <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3737862%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3737862%25253aSV">Book</button>
+                                                        </div>
+                                                    <p class="Bigger-text-a">
+                                                      HYDRAFACIAL BACK TREATMENT. Improve the texture and appearance of your back! This treatment is perfect if you have back acne or pigmentation or if you want to have a flawless-looking back for those low-back dresses and bikinis. This treatment begins with steam and a cleanse followed by our 3-step Signature HydraFacial. Finished off with a medical-grade antioxidant serum, moisturiser, and sunscreen application. For your best results, monthly  treatments are highly recommended. Add LED therapy and a customised Hydrojelly™ mask for an even better result!
+                                                    </p>
+                                          </details>
+
+                                          <details>
+                                                  <summary>
+                                                     Full-body Exfoliation <span class="price">$199</span>
+                                                  </summary>
+                                                  <div class="row">
+                                                          <p class="col-6 Bigger-text-a">1 Hour</p>
+                                                          <!-- Treatment Specific Button -->
+                                                          <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3737877%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3737877%25253aSV">Book</button>
+                                                      </div>
+                                                <p class="Bigger-text-a">Dramatically soften and refine skin texture with a full-body smoothing exfoliation treatment, finish with body moisturizer massage.</p>
+                                          </details>
+
+                                        </div>
+
+                                 <div class="vanish2 col-sm-12 col-md-6 col-lg-6 col-xl-6 px-0 item zoom-on-hover">
+                                             <a class="lightbox" href="Neda Beauty/2/full-body-exfoliation-skin-smoothing-Bella-Vista.jpeg">
+                                               <img class="img-fluid image" src="Neda Beauty/2/full-body-exfoliation-skin-smoothing-Bella-Vista.jpeg" alt="Full-body smoothing exfoliation and moisturising massage for refined skin texture at Neda Beauty." title="Full-body Smoothing Exfoliation.">
+                                             </a>
+                               </div>
+
+                  </div>
+
+
+
+
+                  <div class="row">
+
+                          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 px-0 space4 item zoom-on-hover">
+                                      <a class="lightbox" href="Neda Beauty/2/led-light-therapy-acne-rejuvenation-Bella-Vista.jpeg">
+                                        <img class="img-fluid image" src="Neda Beauty/2/led-light-therapy-acne-rejuvenation-Bella-Vista.jpeg" alt="Blue and red LED light therapy for acne bacteria and skin rejuvenation at Neda Beauty." title="LED Light Therapy Add-on.">
+                                      </a>
+                        </div>
+
+                                        <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 D4">
+                                              <h1 class="padding0 Bigger-text-h3">ADD ONS</h1>
+                                              <details>
+                                                <summary>
+                                                  LED light therapy <span class="price">$39</span>
+                                                </summary>
+                                                <div class="row">
+                                                        <p class="col-6 Bigger-text-a">20 Minutes</p>
+                                                        <!-- Treatment Specific Button -->
+                                                        <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3553605%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3553605%25253aSV">Book</button>
+                                                    </div>
+                                                <p class="Bigger-text-a">(LED) Light Therapy is a deep penetrating, soothing skin treatment ideal for improving skin health, fighting acne causing bacteria, overall skin rejuvenation, reducing the visible signs of ageing and boosting your skin’s healing response.
+
+                                                  Perfect as stand alone treatments or as add-ons to boost results of other skin treatments, our LED Light Therapy treatments can have you looking your best in no time at all.</p>
+                                              </details>
+
+                                              <details>
+                                                <summary>
+                                                      Hand facial <span class="price">$30</span>
+                                                </summary>
+                                                <div class="row">
+                                                        <p class="col-6 Bigger-text-a">20 Minutes</p>
+                                                        <!-- Treatment Specific Button -->
+                                                        <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3553702%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3553702%25253aSV">Book</button>
+                                                    </div>
+
+                                                <p class="Bigger-text-a">Your Hands are Rejuvenated with a exfoliation, warm Hydrating Mask rejuvenating hand massage finishing with a warm paraffin treatment leaving your skin feeling soft, silky and rehydrated.</p>
+                                              </details>
+
+                                              <details>
+                                                <summary>
+                                                    High frequency treatment <span class="price">$29</span>
+                                                </summary>
+                                                <div class="row">
+                                                        <p class="col-6 Bigger-text-a">15 Minutes</p>
+                                                        <!-- Treatment Specific Button -->
+                                                        <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D3737850%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d3737850%25253aSV">Book</button>
+                                                    </div>
+                                                <p class="Bigger-text-a">High Frequency is a popular skincare technique that is used to treat a variety of conditions, including acne management, enlarged pores, fine lines and wrinkles, and puffy or dark eyes.</p>
+                                              </details>
+
+                                             <details>
+                                               <summary>
+                                                   O2 oxygen mask <span class="price">$49</span>
+                                               </summary>
+                                               <div class="row">
+                                                       <p class="col-6 Bigger-text-a">15 Minutes</p>
+                                                       <!-- Treatment Specific Button -->
+                                                       <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D4172248%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d4172248%25253aSV">Book</button>
+                                                   </div>
+                                               <p class="Bigger-text-a">Working to deliver stable oxygen, nutrients, and a fresh blood supply to the epidermal/dermal junction, The O2 Oxygen Mask removes any toxins and waste from your cells that could potentially lead to blemishes and breakouts.</p>
+                                             </details>
+
+                                             <details>
+                                               <summary>
+                                                   Esthemax Hydrojelly mask <span class="price">$39</span>
+                                               </summary>
+                                               <div class="row">
+                                                       <p class="col-6 Bigger-text-a">30 Minutes</p>
+                                                       <!-- Treatment Specific Button -->
+                                                       <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D4763054%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d4763054%25253aSV">Book</button>
+                                                   </div>
+                                               <p class="Bigger-text-a">Improves skin elasticity Moisturizes Rejuvenates Reduces the appearance of fine lines. Helps with skin elasticity and appearance care. Reduces age spots.</p>
+                                             </details>
+
+                                             <details>
+                                               <summary>
+                                                   Hydration sheet mask <span class="price">$15</span>
+                                               </summary>
+                                               <div class="row">
+                                                       <p class="col-6 Bigger-text-a">10 Minutes</p>
+                                                       <!-- Treatment Specific Button -->
+                                                       <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D4965870%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d4965870%25253aSV">Book</button>
+                                                   </div>
+                                             </details>
+
+                                             <details>
+                                               <summary>
+                                                     Ampule infusion with ultrasound machine <span class="price">$30</span>
+                                               </summary>
+                                               <div class="row">
+                                                       <p class="col-6 Bigger-text-a">10 Minutes</p>
+                                                       <!-- Treatment Specific Button -->
+                                                       <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D4966533%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d4966533%25253aSV">Book</button>
+                                                   </div>
+                                             </details>
+
+                                            <details>
+                                              <summary>
+                                                    Relaxing Hand Massage <span class="price">$15</span>
+                                              </summary>
+                                              <div class="row">
+                                                      <p class="col-6 Bigger-text-a">10 Minutes</p>
+                                                      <!-- Treatment Specific Button -->
+                                                      <button class="col-6 booking-btn" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D5073013%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d5073013%25253aSV">Book</button>
+                                                  </div>
+                                              <p class="Bigger-text-a">Enjoy Hand and Arm massage during your treatment ,to release tension and leave your skin feeling velvet-soft.</p>
+                                            </details>
+                                    </div>
+
+              </div>
+
+
+
+
+
+</div>
+                </section>
+                    </div>
+    <!-- Form starts here -->
+    <footer>
+        <div class="row2">
+
+<!-- ==================LAPTOP: open & close hours========================= -->
+                           <div class="col-lg-5 px-0 vanish5">
+                             <h3 class="Bigger-text-h2">OPENING HOURS</h3>
+                             <dl class="store-hours">
+                               <dt class="">Monday</dt>
+                               <dd>6:55am - 7 :00pm</dd>
+
+                               <dt>Tuesday</dt>
+                               <dd>8:00am - 7:00pm</dd>
+
+                               <dt>Wednesday</dt>
+                               <dd>11:00am - 6:00pm</dd>
+
+                               <dt>Saturday</dt>
+                               <dd>8:00am - 5:30pm</dd>
+
+                               <dt>Sunday</dt>
+                               <dd>10:03am - 2:00pm</dd>
+                             </dl>
+                          </div>
+
+<!-- ==================insta & facbook========================= -->
+                   <div class="col-6 col-lg-2 px-0">
+                      <div class="text-center limbo">
+                             <!-- footer information and social media links -->
+                             <a href="https://www.facebook.com/people/Neda-Beauty/61551675522947/?mibextid=wwXIfr&rdid=Q1l3o8yPlrDmdSoR&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F172iqEqtRJ%2F%3Fmibextid%3DwwXIfr" target="_blank" class="icon1 facebook">
+                               <span><i class="fab fa-facebook-f"></i></span>
+                             </a>
+
+                             <a href="https://www.instagram.com/nedabeauty_skinclinic" target="_blank" class="icon2 instagram">
+                               <span><i class="fab fa-instagram"></i></span>
+                             </a>
+
+                             <span class="white">&#169;</span>
+                    </div>
+                 </div>
+
+                 <!-- ==================Gift voucher========================= -->
+                                  <div class="col-6 col-lg-5 px-0 textmid">
+                                          <!-- The Button -->
+                                         <button class="booking-btn" data-url="https://book.gettimely.com/nedabeautyskinclinic/giftvouchers/embed?giftVoucherId=276378&client-login=true">BUY GIFT VOUCHER</button>
+                                </div>
+
+ <!-- ==================PHONE: open & close hours========================= -->
+                                <div class="col-12 px-0 vanish6 space5 space6">
+                                  <h5 class="Bigger-text-h2">OPENING HOURS</h5>
+                                  <dl class="store-hours">
+                                    <dt class="">Monday</dt>
+                                    <dd>6:55am - 7 :00pm</dd>
+
+                                    <dt>Tuesday</dt>
+                                    <dd>8:00am - 7:00pm</dd>
+
+                                    <dt>Wednesday</dt>
+                                    <dd>11:00am - 6:00pm</dd>
+
+                                    <dt>Saturday</dt>
+                                    <dd>8:00am - 5:30pm</dd>
+
+                                    <dt>Sunday</dt>
+                                    <dd>10:03am - 2:00pm</dd>
+                                  </dl>
+                               </div>
+
+
+       </div>
+    </footer>
+    <!-- The Button -->
+   <button class="booking-btn floating-btn gloss-overlay3" data-url="https://bookings.gettimely.com/nedabeautyskinclinic/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F238147%3Fmobile%3DTrue%26productId%3D4526008%253Asv%26params%3D%25253fclient-login%25253dtrue%252526product%25253d4526008%25253aSV">FREE SKIN CONSULTATION</button>
+
+
+
+
+<!-- THE SINGLE SHARED MODAL (Put this once at the bottom) -->
+<div id="dynamicModal" class="modal">
+  <div class="modal-content">
+      <span class="close-button" id="closeModal">&times;</span>
+      <iframe id="modalIframe" src="" width="100%" height="100%" frameborder="0"></iframe>
+  </div>
+</div>
+
+<!-- JavaScript Logic -->
+<script>
+  const modal = document.getElementById("dynamicModal");
+  const iframe = document.getElementById("modalIframe");
+  const closeBtn = document.getElementById("closeModal");
+  const bookingButtons = document.querySelectorAll(".booking-btn");
+
+  // Open modal and load specific URL
+  bookingButtons.forEach(button => {
+      button.addEventListener("click", function(e) {
+          e.preventDefault();
+          const targetUrl = this.getAttribute("data-url");
+          iframe.src = targetUrl;
+          modal.style.display = "block";
+      });
+  });
+
+  // Close modal and clear iframe
+  closeBtn.onclick = () => {
+      modal.style.display = "none";
+      iframe.src = "";
+  };
+
+  // Close if clicking outside the modal box
+  window.onclick = (event) => {
+      if (event.target == modal) {
+          modal.style.display = "none";
+          iframe.src = "";
+      }
+  };
+</script>
+
+
+
+
+
+<!-- =================No Content below here========================= -->
+  <!-- Bootstrap JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+<!-- This script is for the accordian - start -->
+<!-- Accordion script -->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+<!-- Reveal on scroll script -->
+<script>
+function revealOnScroll() {
+  const reveals = document.querySelectorAll(".reveal");
+
+  reveals.forEach((el) => {
+    const windowHeight = window.innerHeight;
+    const elementTop = el.getBoundingClientRect().top;
+    const revealPoint = 100;
+
+    if (elementTop < windowHeight - revealPoint) {
+      el.classList.add("active");
+    } else {
+      el.classList.remove("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+</script>
+
+<!-- jQuery, Popper, Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+<!-- Lightbox -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+<script>
+  baguetteBox.run('.compact-gallery', { animation: 'slideIn' });
+</script>
+
+<script>
+window.addEventListener('click', (event) => {
+  // If the clicked element has the "modal" class, hide it
+  if (event.target.classList.contains('modal')) {
+    event.target.style.display = "none";
+  }
+});
+</script>
+
+
+
+
+</body>
+</html>
+<!-- ****** Blank Bootstrap 4.5 starting template for 101922, Web & Time Based Design  ***** -->
