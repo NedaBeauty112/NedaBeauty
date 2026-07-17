@@ -1,0 +1,14 @@
+# Neda Beauty Skin Clinic
+
+Professional skin clinic offering advanced skin treatments and personalised skincare services.
+
+
+## Key Pages
+
+- [Home](https://nedabeautyskinclinic.com/): Homepage and clinic overview.
+- [Treatments](https://nedabeautyskinclinic.com/Treatments.html): Information about available skin treatments.
+- [Contact](https://nedabeautyskinclinic.com/Contact.html): Contact details and appointment enquiries.
+
+## Sitemap
+
+https://nedabeautyskinclinic.com/sitemap.xml
